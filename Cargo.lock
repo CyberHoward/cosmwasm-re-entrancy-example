@@ -202,6 +202,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "cw-controllers"
+version = "0.14.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b81b8c4647f13be38baea7345885fcd97cffe8ad4e0454a43f975be9609127ed"
+dependencies = [
+ "cosmwasm-std",
+ "cw-storage-plus",
+ "cw-utils",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "cw-multi-test"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -382,6 +396,31 @@ dependencies = [
  "sec1",
  "subtle",
  "zeroize",
+]
+
+[[package]]
+name = "exploit"
+version = "1.0.0"
+dependencies = [
+ "cosmwasm-bignumber",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-controllers",
+ "cw-multi-test",
+ "cw-storage-plus",
+ "cw2",
+ "cw20",
+ "cw20-base",
+ "fee_collector",
+ "protobuf 3.1.0",
+ "schemars",
+ "semver",
+ "serde",
+ "terraswap",
+ "thiserror",
+ "vault",
+ "vault-network",
+ "white-whale",
 ]
 
 [[package]]
@@ -865,22 +904,6 @@ dependencies = [
  "terraswap",
  "thiserror",
  "white-whale",
-]
-
-[[package]]
-name = "terraswap-router"
-version = "1.0.0"
-dependencies = [
- "cosmwasm-schema",
- "cosmwasm-std",
- "cosmwasm-storage",
- "cw-storage-plus",
- "cw2",
- "cw20",
- "integer-sqrt",
- "schemars",
- "serde",
- "terraswap",
 ]
 
 [[package]]
